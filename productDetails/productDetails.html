@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AppStack</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../MainPage/style.css" />
+    </head>
+
+    <body>
+        <div class="d-flex">
+            <!-- Sidebar -->
+            <div class="sidebar" id="sidebar">
+                <div
+                    class="logo d-flex justify-content-center align-items-center"
+                >
+                    <img
+                        src="../images/logo.PNG"
+                        alt="Logo"
+                        class="logo-img m-2"
+                    />
+                    <h3>AppStack</h3>
+                </div>
+                <!-- content -->
+                <div class="content mt-3">
+                    <div class="navigation">
+                        <p>Navigation</p>
+                        <a
+                            href="#collapse-1"
+                            data-bs-toggle="collapse"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                            class="dashboard-link"
+                            ><i class="fa-solid fa-sliders"></i> Dashboard</a
+                        >
+                        <div class="collapse" id="collapse-1">
+                            <ul>
+                                <li><a href="#">Default</a></li>
+                                <li><a href="#">Analytics</a></li>
+                                <li><a href="#">Saas</a></li>
+                                <li><a href="#">Social</a></li>
+                                <li><a href="#">Crypto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="apps mt-5">
+                        <p>Apps</p>
+                        <div class="E-commerce">
+                            <a
+                                href="#collapse-2"
+                                data-bs-toggle="collapse"
+                                aria-expanded="false"
+                                aria-controls="collapseExample"
+                                class="dashboard-link"
+                                ><i class="fa-solid fa-bag-shopping"></i>
+                                E-commerce</a
+                            >
+                            <div class="collapse" id="collapse-2">
+                                <ul>
+                                    <li>
+                                        <a href="../index.html">Products</a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="../productDetails/productDetails.html"
+                                            >Product details</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="../orders/orders.html"
+                                            >Orders</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="../customers/customers.html"
+                                            >Customers</a
+                                        >
+                                    </li>
+                                    <li><a href="#">Invoice</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="Projects mt-3">
+                            <a
+                                href="#collapse-3"
+                                data-bs-toggle="collapse"
+                                aria-expanded="false"
+                                aria-controls="collapseExample"
+                                class="dashboard-link"
+                                ><i class="fa-solid fa-business-time"></i>
+                                Projects</a
+                            >
+                            <div class="collapse" id="collapse-3">
+                                <ul>
+                                    <li><a href="#">Overview</a></li>
+                                    <li><a href="#">Details</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <!-- Nav Bar -->
+                    <div class="w-100">
+                        <nav class="navbar bg-body-tertiary">
+                            <div class="container-fluid">
+                                <div
+                                    class="d-flex justify-content-center align-items-center"
+                                >
+                                    <button
+                                        class="navbar-toggler"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#sidebar"
+                                        aria-controls="navbarNav"
+                                        aria-expanded="false"
+                                        aria-label="Toggle navigation"
+                                    >
+                                        <span
+                                            class="navbar-toggler-icon"
+                                        ></span>
+                                    </button>
+
+                                    <form class="d-none d-sm-inline-block">
+                                        <div
+                                            class="input-group input-group-navbar"
+                                        >
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                placeholder="Search projects…"
+                                                aria-label="Search"
+                                            />
+                                            <button class="btn" type="button">
+                                                <i
+                                                    class="fa-solid fa-magnifying-glass"
+                                                ></i>
+                                            </button>
+                                        </div>
+                                    </form>
+                                    <div class="dropdown">
+                                        <a
+                                            class="nav-link dropdown-toggle"
+                                            href="#"
+                                            id="servicesDropdown"
+                                            role="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                        >
+                                            Mega menu
+                                        </a>
+                                        <div
+                                            class="dropdown-menu dropdown-menu-start dropdown-mega"
+                                            aria-labelledby="servicesDropdown"
+                                        >
+                                            <div
+                                                class="d-md-flex align-items-start justify-content-start"
+                                            >
+                                                <div class="dropdown-mega-list">
+                                                    <div
+                                                        class="dropdown-header"
+                                                    >
+                                                        UI Elements
+                                                    </div>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Alerts</a
+                                                    >
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Buttons</a
+                                                    >
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Cards</a
+                                                    >
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Carousel</a
+                                                    >
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >General</a
+                                                    >
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Grid</a
+                                                    >
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Modals</a
+                                                    >
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Tabs</a
+                                                    >
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Typography</a
+                                                    >
+                                                </div>
+                                                <div class="dropdown-mega-list">
+                                                    <div
+                                                        class="dropdown-header"
+                                                    >
+                                                        Forms
+                                                    </div>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Layouts</a
+                                                    >
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Basic Inputs</a
+                                                    >
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Input Groups</a
+                                                    >
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Advanced Inputs</a
+                                                    >
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Editors</a
+                                                    >
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Validation</a
+                                                    >
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Wizard</a
+                                                    >
+                                                </div>
+                                                <div class="dropdown-mega-list">
+                                                    <div
+                                                        class="dropdown-header"
+                                                    >
+                                                        Tables
+                                                    </div>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Basic Tables</a
+                                                    >
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Responsive Table</a
+                                                    >
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Table with Buttons</a
+                                                    >
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Column Search</a
+                                                    >
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Muulti Selection</a
+                                                    >
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Ajax Sourced Data</a
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex justify-content-center align-items-center"
+                                >
+                                    <div class="dropdown">
+                                        <a
+                                            class="btn dropdown-toggle"
+                                            href="#messages"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            <i
+                                                class="fa-regular fa-comment"
+                                            ></i>
+                                        </a>
+                                        <ul
+                                            class="dropdown-menu"
+                                            aria-labelledby="messages"
+                                            id="messages"
+                                        >
+                                            <li>
+                                                <p
+                                                    class="dropdown-header text-center"
+                                                >
+                                                    4 new messages
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div
+                                                    class="dropdown-item d-flex"
+                                                >
+                                                    <div class="me-3">
+                                                        <img
+                                                            class="person"
+                                                            src="../images/person1.jpg"
+                                                            alt="person1"
+                                                            decoding="async"
+                                                        />
+                                                    </div>
+                                                    <div class="content">
+                                                        <p class="name">
+                                                            John Doe
+                                                        </p>
+                                                        <p class="message">
+                                                            Lorem ipsum dolor
+                                                            sit amet
+                                                        </p>
+                                                        <p class="time">
+                                                            15 minutes ago
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <hr />
+                                            <li>
+                                                <div
+                                                    class="dropdown-item d-flex"
+                                                >
+                                                    <div class="me-3">
+                                                        <img
+                                                            class="person"
+                                                            src="../images/person2.jpg"
+                                                            alt="person1"
+                                                            decoding="async"
+                                                        />
+                                                    </div>
+                                                    <div class="content">
+                                                        <p class="name">
+                                                            Alex Marie
+                                                        </p>
+                                                        <p class="message">
+                                                            Lorem ipsum dolor
+                                                            sit amet
+                                                        </p>
+                                                        <p class="time">
+                                                            2h ago
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <hr />
+                                            <li>
+                                                <div
+                                                    class="dropdown-item d-flex"
+                                                >
+                                                    <div class="me-3">
+                                                        <img
+                                                            class="person"
+                                                            src="../images/person3.jpg"
+                                                            alt="person1"
+                                                            decoding="async"
+                                                        />
+                                                    </div>
+                                                    <div class="content">
+                                                        <p class="name">
+                                                            Stewie Guy
+                                                        </p>
+                                                        <p class="message">
+                                                            Lorem ipsum dolor
+                                                            sit amet
+                                                        </p>
+                                                        <p class="time">
+                                                            4h ago
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <hr />
+                                            <li>
+                                                <div
+                                                    class="dropdown-item d-flex"
+                                                >
+                                                    <div class="me-3">
+                                                        <img
+                                                            class="person"
+                                                            src="../images/person4.jpg"
+                                                            alt="person1"
+                                                            decoding="async"
+                                                        />
+                                                    </div>
+                                                    <div class="content">
+                                                        <p class="name">
+                                                            Chris Ryan
+                                                        </p>
+                                                        <p class="message">
+                                                            Lorem ipsum dolor
+                                                            sit amet
+                                                        </p>
+                                                        <p class="time">
+                                                            5h ago
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <hr />
+                                            <li>
+                                                <p
+                                                    class="dropdown-footer text-center"
+                                                >
+                                                    <a href="#"
+                                                        >View All Messages</a
+                                                    >
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a
+                                            class="btn dropdown-toggle"
+                                            href="#notifications"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            <i
+                                                class="fa-regular fa-bell-slash"
+                                            ></i>
+                                        </a>
+                                        <ul
+                                            class="dropdown-menu"
+                                            aria-labelledby="notifications"
+                                            id="notifications"
+                                        >
+                                            <li>
+                                                <p
+                                                    class="dropdown-header text-center"
+                                                >
+                                                    4 new notifications
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div
+                                                    class="dropdown-item d-flex"
+                                                >
+                                                    <div class="me-3">
+                                                        <i
+                                                            class="fa-solid fa-circle-info text-danger mt-4"
+                                                        ></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>Update completed</p>
+                                                        <p class="message">
+                                                            Restart server 12 to
+                                                            complete
+                                                        </p>
+                                                        <p class="time">
+                                                            2h ago
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <hr />
+                                            <li>
+                                                <div
+                                                    class="dropdown-item d-flex"
+                                                >
+                                                    <div class="me-3">
+                                                        <i
+                                                            class="fa-solid fa-bell text-warning mt-4"
+                                                        ></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>Lorem, ipsum.</p>
+                                                        <p class="message">
+                                                            Lorem ipsum dolor
+                                                            sit.
+                                                        </p>
+                                                        <p class="time">
+                                                            6h ago
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <hr />
+                                            <li>
+                                                <div
+                                                    class="dropdown-item d-flex"
+                                                >
+                                                    <div class="me-3">
+                                                        <i
+                                                            class="fa-solid fa-home text-primary mt-4"
+                                                        ></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>
+                                                            Login from
+                                                            244.178.44.111
+                                                        </p>
+                                                        <p class="time">
+                                                            8h ago
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <hr />
+                                            <li>
+                                                <div
+                                                    class="dropdown-item d-flex"
+                                                >
+                                                    <div class="me-3">
+                                                        <i
+                                                            class="fa-solid fa-user text-success mt-4"
+                                                        ></i>
+                                                    </div>
+                                                    <div class="content">
+                                                        <p>New connection</p>
+                                                        <p class="message">
+                                                            Anna accepted your
+                                                            request
+                                                        </p>
+                                                        <p class="time">
+                                                            12h ago
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <hr />
+                                            <li>
+                                                <p
+                                                    class="dropdown-footer text-center"
+                                                >
+                                                    <a href="#"
+                                                        >View All
+                                                        Notifications</a
+                                                    >
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-moon mx-2"></i>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a
+                                            class="btn dropdown-toggle"
+                                            href="#dropdownMenu"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            <img
+                                                class="flag"
+                                                src="../images/us.png"
+                                                alt="us flag"
+                                                decoding="async"
+                                            />
+                                        </a>
+                                        <ul
+                                            class="dropdown-menu"
+                                            aria-labelledby="dropdownMenuButton1"
+                                            id="dropdownMenu"
+                                        >
+                                            <li class="dropdown-item">
+                                                <div>
+                                                    <img
+                                                        class="flag"
+                                                        src="../images/us.png"
+                                                        alt="US flag"
+                                                        decoding="async"
+                                                    />
+                                                    <span class="ms-2"
+                                                        >English</span
+                                                    >
+                                                </div>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <div>
+                                                    <img
+                                                        class="flag"
+                                                        src="../images/spain.png"
+                                                        alt="spain flag"
+                                                        decoding="async"
+                                                    />
+                                                    <span class="ms-2"
+                                                        >Spanish</span
+                                                    >
+                                                </div>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <div>
+                                                    <img
+                                                        class="flag"
+                                                        src="../images/german.png"
+                                                        alt="german flag"
+                                                        decoding="async"
+                                                    />
+                                                    <span class="ms-2"
+                                                        >German</span
+                                                    >
+                                                </div>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <div>
+                                                    <img
+                                                        class="flag"
+                                                        src="../images/dutch.png"
+                                                        alt="Dutch flag"
+                                                        decoding="async"
+                                                    />
+                                                    <span class="ms-2"
+                                                        >Dutch</span
+                                                    >
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a
+                                            href="#dropdownMenu"
+                                            class="btn"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            <span>
+                                                <img
+                                                    src="../images/person1.jpg"
+                                                    class="person"
+                                                    alt=""
+                                                />
+                                            </span>
+                                            <span> Chris wood </span>
+                                        </a>
+                                        <ul
+                                            class="dropdown-menu"
+                                            id="dropdownMenu"
+                                        >
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                >
+                                                    <i
+                                                        class="fa-regular fa-user"
+                                                    ></i>
+                                                    Profile</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                >
+                                                    <i
+                                                        class="fa-solid fa-gear"
+                                                    ></i>
+                                                    Analytics</a
+                                                >
+                                            </li>
+                                            <hr />
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >Settings and Privacy</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >Help</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >Sign out</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <main class="content ms-3">
+                    <div class="container-fluid p-0">
+                        <h1 class="h3 mb-3">Product Details</h1>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-xl-7 col-xxl-6">
+                                        <div class="row">
+                                            <div
+                                                class="col-4 col-md-3 col-xxl-2"
+                                            >
+                                                <div
+                                                    class="nav flex-column nav-outline"
+                                                    role="tablist"
+                                                    aria-orientation="vertical"
+                                                >
+                                                    <a
+                                                        class="nav-link active mb-2"
+                                                        data-bs-toggle="pill"
+                                                        href="#product-1"
+                                                        role="tab"
+                                                        aria-controls="product-1"
+                                                        aria-selected="true"
+                                                    >
+                                                        <img
+                                                            src="../images/iphone1.jpg"
+                                                            alt=""
+                                                            class="img-fluid mx-auto d-block rounded mh-75px"
+                                                            decoding="async"
+                                                        />
+                                                    </a>
+                                                    <a
+                                                        class="nav-link mb-2"
+                                                        data-bs-toggle="pill"
+                                                        href="#product-2"
+                                                        role="tab"
+                                                        aria-controls="product-2"
+                                                        aria-selected="false"
+                                                        tabindex="-1"
+                                                    >
+                                                        <img
+                                                            src="../images/iphone2.jpg"
+                                                            alt=""
+                                                            class="img-fluid mx-auto d-block rounded mh-75px"
+                                                            decoding="async"
+                                                        />
+                                                    </a>
+                                                    <a
+                                                        class="nav-link mb-2"
+                                                        data-bs-toggle="pill"
+                                                        href="#product-3"
+                                                        role="tab"
+                                                        aria-controls="product-3"
+                                                        aria-selected="false"
+                                                        tabindex="-1"
+                                                    >
+                                                        <img
+                                                            src="../images/iphone3.jpg"
+                                                            alt=""
+                                                            class="img-fluid mx-auto d-block rounded mh-75px"
+                                                            decoding="async"
+                                                        />
+                                                    </a>
+                                                    <a
+                                                        class="nav-link mb-2"
+                                                        data-bs-toggle="pill"
+                                                        href="#product-4"
+                                                        role="tab"
+                                                        aria-controls="product-4"
+                                                        aria-selected="false"
+                                                        tabindex="-1"
+                                                    >
+                                                        <img
+                                                            src="../images/iphone4.jpg"
+                                                            alt=""
+                                                            class="img-fluid mx-auto d-block rounded mh-75px"
+                                                            decoding="async"
+                                                        />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="col-8 col-md-9 col-xxl-9 offset-xxl-1"
+                                            >
+                                                <div class="tab-content p-3">
+                                                    <div
+                                                        class="tab-pane fade active show"
+                                                        id="product-1"
+                                                        role="tabpanel"
+                                                    >
+                                                        <img
+                                                            src="../images/iphone1.jpg"
+                                                            alt=""
+                                                            class="img-fluid mx-auto d-block"
+                                                        />
+                                                    </div>
+                                                    <div
+                                                        class="tab-pane fade"
+                                                        id="product-2"
+                                                        role="tabpanel"
+                                                    >
+                                                        <img
+                                                            src="../images/iphone2.jpg"
+                                                            alt=""
+                                                            class="img-fluid mx-auto d-block"
+                                                            decoding="async"
+                                                        />
+                                                    </div>
+                                                    <div
+                                                        class="tab-pane fade"
+                                                        id="product-3"
+                                                        role="tabpanel"
+                                                    >
+                                                        <img
+                                                            src="../images/iphone3.jpg"
+                                                            alt=""
+                                                            class="img-fluid mx-auto d-block"
+                                                            decoding="async"
+                                                        />
+                                                    </div>
+                                                    <div
+                                                        class="tab-pane fade"
+                                                        id="product-4"
+                                                        role="tabpanel"
+                                                    >
+                                                        <img
+                                                            src="../images/iphone4.jpg"
+                                                            alt=""
+                                                            class="img-fluid mx-auto d-block"
+                                                            decoding="async"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-5 col-xxl-6">
+                                        <div class="mt-3">
+                                            <a href="#" class="text-primary"
+                                                >Smartphones</a
+                                            >
+                                            <h4 class="mt-1 mb-4">
+                                                Apple iPhone 15 Pro Max
+                                            </h4>
+                                            <p class="mb-3">
+                                                <i
+                                                    class="fa-solid fa-star text-warning"
+                                                ></i>
+                                                4.6
+                                                <span class="text-muted"
+                                                    >out of 40 Reviews</span
+                                                >
+                                            </p>
+                                            <h5 class="mb-3">
+                                                Price: $1499 USD
+                                            </h5>
+                                            <p class="text-muted mb-4">
+                                                Introducing the Apple iPhone 15
+                                                Pro Max 256GB in Blue Titanium.
+                                                Experience unparalleled
+                                                performance with the
+                                                lightning-fast A17 Pro chip,
+                                                perfect for gaming and seamless
+                                                multitasking. Capture stunning
+                                                photos and videos with the
+                                                triple-lens camera system,
+                                                including standard, wide-angle,
+                                                and telephoto lenses, complete
+                                                with Night mode for low-light
+                                                shots.
+                                            </p>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <p class="text-muted">
+                                                        <i
+                                                            data-lucide="database"
+                                                            class="align-middle"
+                                                        ></i>
+                                                        <span
+                                                            class="align-middle"
+                                                            >Storage: 256
+                                                            GB</span
+                                                        >
+                                                    </p>
+                                                    <p class="text-muted">
+                                                        <i
+                                                            data-lucide="smartphone-charging"
+                                                            class="align-middle"
+                                                        ></i>
+                                                        <span
+                                                            class="align-middle"
+                                                            >Battery: 29
+                                                            hours</span
+                                                        >
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p class="text-muted">
+                                                        <i
+                                                            data-lucide="camera"
+                                                            class="align-middle"
+                                                        ></i>
+                                                        <span
+                                                            class="align-middle"
+                                                            >Megapixels: 48
+                                                            MP</span
+                                                        >
+                                                    </p>
+                                                    <p class="text-muted">
+                                                        <i
+                                                            data-lucide="cog"
+                                                            class="align-middle"
+                                                        ></i>
+                                                        <span
+                                                            class="align-middle"
+                                                            >Warranty: 24
+                                                            Months</span
+                                                        >
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <a
+                                                href="#"
+                                                class="btn btn-primary mb-3 me-1"
+                                            >
+                                                <i
+                                                    data-lucide="shopping-bag"
+                                                    class="align-middle"
+                                                ></i>
+                                                <span class="align-middle"
+                                                    >Buy now</span
+                                                >
+                                            </a>
+                                            <a
+                                                href="#"
+                                                class="btn btn-light mb-3"
+                                            >
+                                                <i
+                                                    data-lucide="shopping-cart"
+                                                    class="align-middle"
+                                                ></i>
+                                                <span class="align-middle"
+                                                    >Add to cart</span
+                                                >
+                                            </a>
+                                            <h5>Color:</h5>
+                                            <div
+                                                class="nav nav-outline"
+                                                role="tablist"
+                                                aria-orientation="horizontal"
+                                            >
+                                                <div class="me-3 text-center">
+                                                    <a
+                                                        class="nav-link active p-1 mb-1 w-75px h-75px"
+                                                    >
+                                                        <img
+                                                            src="../images/iphone1.jpg"
+                                                            alt=""
+                                                            height="45"
+                                                            width="45"
+                                                            class="img-fluid mx-auto d-block rounded w-50px mb-1"
+                                                            decoding="async"
+                                                        />
+                                                    </a>
+                                                    <p class="mb-0">Blue</p>
+                                                </div>
+                                                <div class="me-3 text-center">
+                                                    <a
+                                                        class="nav-link p-1 mb-1 w-75px h-75px"
+                                                    >
+                                                        <img
+                                                            src="../images/iphone4.jpg"
+                                                            alt=""
+                                                            height="45"
+                                                            width="45"
+                                                            class="img-fluid mx-auto d-block rounded w-50px mb-1"
+                                                            decoding="async"
+                                                        />
+                                                    </a>
+                                                    <p class="mb-0">White</p>
+                                                </div>
+                                                <div class="me-3 text-center">
+                                                    <a
+                                                        class="nav-link p-1 mb-1 w-75px h-75px"
+                                                    >
+                                                        <img
+                                                            src="../images/iphone2.jpg"
+                                                            alt=""
+                                                            class="img-fluid mx-auto d-block rounded w-50px mb-1"
+                                                            height="45"
+                                                            width="45"
+                                                            decoding="async"
+                                                        />
+                                                    </a>
+                                                    <p class="mb-0">Natural</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="h4 mb-3">Specifications</h2>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="table-responsive">
+                                            <table class="table table-sm mb-0">
+                                                <tbody>
+                                                    <tr>
+                                                        <th
+                                                            scope="row"
+                                                            style="width: 320px"
+                                                        >
+                                                            Category
+                                                        </th>
+                                                        <td>Smartphones</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            Brand
+                                                        </th>
+                                                        <td>Apple</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            Product number
+                                                        </th>
+                                                        <td>935277</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            Warranty
+                                                        </th>
+                                                        <td>24 Months</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            Color
+                                                        </th>
+                                                        <td>Blue</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="table-responsive">
+                                            <table class="table table-sm mb-0">
+                                                <tbody>
+                                                    <tr>
+                                                        <th
+                                                            scope="row"
+                                                            style="width: 320px"
+                                                        >
+                                                            Year introduced
+                                                        </th>
+                                                        <td>2023</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            Operating system
+                                                        </th>
+                                                        <td>iOS</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            Operation system
+                                                            when introduced
+                                                        </th>
+                                                        <td>iOS 17</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            Update frequency
+                                                        </th>
+                                                        <td>Each quarter</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            Date of last
+                                                            security update
+                                                        </th>
+                                                        <td>September 2028</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="h4 my-3">Related products</h2>
+                        <div class="row">
+                            <div class="col-sm-6 col-xl-4">
+                              <div class="card">
+                                <div class="card-body">
+                                  <div class="row align-items-center">
+                                    <div class="col-md-4">
+                                      <img src="../images/ipadPro1.jpg" alt="" class="img-fluid mx-auto d-block mw-75px" decoding="async">
+                                    </div>
+                                    <div class="col-md-8">
+                                      <div class="text-center text-md-start pt-3 pt-md-0">
+                                        <h5 class="text-truncate">
+                                          <a href="#" class="text-reset">Apple iPad Pro</a>
+                                        </h5>
+                                        <p class="text-muted mb-4">
+                                          <i class="fa-solid fa-star text-warning"></i> 4.6 <span class="text-muted">out of 55 Reviews</span>
+                                        </p>
+                                        <p class="my-0"><span class="text-muted me-2"><strong>$1,399.00</strong></p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="col-sm-6 col-xl-4">
+                              <div class="card">
+                                <div class="card-body">
+                                  <div class="row align-items-center">
+                                    <div class="col-md-4">
+                                      <img src="../images/appleWatch1.jpg" alt="" class="img-fluid mx-auto d-block mw-75px" decoding="async">
+                                    </div>
+                                    <div class="col-md-8">
+                                      <div class="text-center text-md-start pt-3 pt-md-0">
+                                        <h5 class="text-truncate">
+                                          <a href="#" class="text-reset">Apple Watch SE</a>
+                                        </h5>
+                                        <p class="text-muted mb-4">
+                                          <i class="fa-solid fa-star text-warning"></i> 4.7 <span class="text-muted">out of 40 Reviews</span>
+                                        </p>
+                                        <p class="my-0"><span class="text-muted me-2"><strong>$299.00</strong></p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="col-sm-6 col-xl-4">
+                              <div class="card">
+                                <div class="card-body">
+                                  <div class="row align-items-center">
+                                    <div class="col-md-4">
+                                      <img src="../images/mac.jpg" alt="" class="img-fluid mx-auto d-block mw-75px" decoding="async">
+                                    </div>
+                                    <div class="col-md-8">
+                                      <div class="text-center text-md-start pt-3 pt-md-0">
+                                        <h5 class="text-truncate">
+                                          <a href="#" class="text-reset">Apple MacBook Pro 16</a>
+                                        </h5>
+                                        <p class="text-muted mb-4">
+                                          <i class="fa-solid fa-star text-warning"></i> 4.7 <span class="text-muted">out of 45 Reviews</span>
+                                        </p>
+                                        <p class="my-0"><span class="text-muted me-2"><strong>$2,399.00</strong></p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row text-muted">
+                            <div class="col-6 text-start">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a class="text-muted" href="#"
+                                            >Support</a
+                                        >
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="text-muted" href="#"
+                                            >Help Center</a
+                                        >
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="text-muted" href="#"
+                                            >Privacy</a
+                                        >
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="text-muted" href="#"
+                                            >Terms of Service</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 text-end">
+                                <p class="mb-0">
+                                    &copy; 2024 -
+                                    <a class="text-muted" href="/">AppStack</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
